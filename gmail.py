@@ -86,10 +86,10 @@ while True:
                 server.sendmail(gmail_username, recipient_email, no_news_body.as_string())
 
         # Sleep for 10 minutes before checking again
-        time.sleep(60)
+        time.sleep(300)
 
     except Exception as e:
         # Handle exceptions, e.g., network errors or issues with the website
         print(f"An error occurred: {str(e)}")
         # Sleep for 10 minutes before retrying
-        time.sleep(60)
+        time.sleep(300)
